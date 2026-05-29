@@ -16,7 +16,6 @@ class DraggableProductWidget<T extends Object>
   Widget build(BuildContext context) {
     return Draggable<T>(
       data: data,
-
       feedback: Material(
         color: Colors.transparent,
         child: SizedBox(
@@ -24,7 +23,6 @@ class DraggableProductWidget<T extends Object>
           child: child,
         ),
       ),
-
       childWhenDragging: Opacity(
         opacity: 0.5,
         child: child,

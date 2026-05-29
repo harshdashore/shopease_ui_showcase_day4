@@ -11,13 +11,10 @@ class IOSHomePage extends StatelessWidget {
         navigationBar: const CupertinoNavigationBar(
           middle: Text("iOS Shop"),
         ),
-
         child: Center(
           child: CupertinoButton(
             color: CupertinoColors.activeBlue,
-
             child: const Text("Buy Now"),
-
             onPressed: () {
               showCupertinoDialog(
                 context: context,

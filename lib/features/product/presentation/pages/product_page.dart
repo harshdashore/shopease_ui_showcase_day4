@@ -23,13 +23,11 @@ class ProductPage extends StatelessWidget {
 
       body: BlocBuilder<ProductBloc, ProductState>(
         builder: (context, state) {
-
           if (state is ProductLoading) {
             return const Center(
               child: CircularProgressIndicator(),
             );
           }
-
           if (state is ProductLoaded) {
             return ListView.builder(
               itemCount: state.products.length,
@@ -40,7 +38,6 @@ class ProductPage extends StatelessWidget {
               },
             );
           }
-
           return const SizedBox();
         },
       ),

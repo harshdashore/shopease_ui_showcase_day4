@@ -3,13 +3,11 @@ import 'package:flutter/material.dart';
 class FadeAnimationWidget extends StatelessWidget {
   final bool visible;
   final Widget child;
-
   const FadeAnimationWidget({
     super.key,
     required this.visible,
     required this.child,
   });
-
   @override
   Widget build(BuildContext context) {
     return AnimatedOpacity(

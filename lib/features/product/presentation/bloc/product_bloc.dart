@@ -5,7 +5,6 @@ import 'package:shopease_ui_showcase_day4/features/product/presentation/bloc/pro
 
 class ProductBloc extends Bloc<ProductEvent, ProductState> {
   final GetProductsUseCase getProductsUseCase;
-
   ProductBloc(this.getProductsUseCase) : super(ProductInitial()) {
     on<LoadProducts>((event, emit) async {
       emit(ProductLoading());

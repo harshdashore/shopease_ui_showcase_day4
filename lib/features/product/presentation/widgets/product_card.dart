@@ -3,16 +3,13 @@ import 'package:shopease_ui_showcase_day4/features/product/domain/entities/produ
 
 class ProductCard extends StatefulWidget {
   final ProductEntity product;
-
   const ProductCard({
     super.key,
     required this.product,
   });
-
   @override
   State<ProductCard> createState() => _ProductCardState();
 }
-
 class _ProductCardState extends State<ProductCard>
     with SingleTickerProviderStateMixin {
 

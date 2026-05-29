@@ -11,10 +11,8 @@ void main() {
   final repository = ProductRepositoryImpl(
     ProductLocalDataSource(),
   );
-
   final getProductsUseCase =
   GetProductsUseCase(repository);
-
   runApp(
     MyApp(
       getProductsUseCase: getProductsUseCase,
@@ -34,14 +32,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-
         BlocProvider<ProductBloc>(
           create: (_) => ProductBloc(
             getProductsUseCase,
           )..add(LoadProducts()),
         ),
       ],
-
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         home: const ProductPage(),

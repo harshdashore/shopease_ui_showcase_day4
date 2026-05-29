@@ -13,14 +13,12 @@ class ScaleAnimationWidget extends StatelessWidget {
     return TweenAnimationBuilder(
       tween: Tween(begin: 1.0, end: 1.2),
       duration: const Duration(milliseconds: 300),
-
       builder: (_, value, child) {
         return Transform.scale(
           scale: value,
           child: child,
         );
       },
-
       child: child,
     );
   }

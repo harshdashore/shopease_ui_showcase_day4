@@ -13,11 +13,9 @@ class ProductDetailsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-
       body: Center(
         child: Hero(
           tag: product.id,
-
           child: InteractiveViewer(
             child: Image.asset(product.image),
           ),

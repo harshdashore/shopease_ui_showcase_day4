@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 
 class WishlistDragTarget<T extends Object>
     extends StatelessWidget {
-
   final Function(T) onItemAccepted;
-
   const WishlistDragTarget({
     super.key,
     required this.onItemAccepted,
